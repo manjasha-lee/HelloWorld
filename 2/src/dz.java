@@ -1,7 +1,7 @@
 public class dz {
     public static void main(String args[]) {
 
-        
+
         int i = 10;
         int a = i + 2;
         int b = i - 2;
