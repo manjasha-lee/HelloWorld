@@ -3,17 +3,37 @@ public class lesson2 {
      int[] ints = new int[]{11,12,13,14,15,16,17,18};
         int i=0;
 
+        int[] cifry = new int[]{11,12,13,14,15,16,17,18};
 
-        while (ints[i]>15){
-            ints[i]=i+10;
-            System.out.println(ints[i]);
+        do {
+            i++;
+            System.out.println(cifry[i]);
         }
-        for (int anInt : ints) {
-            System.out.println(ints[i]);
-        }
+        while (cifry[i]<15);
+
+        polymorphism (2,3);
+        polymorphism(8);
+        polymorphism (1,2,3);//проверка приоритета логической операции
+
+    }
+    static void polymorphism (int b, int c){
+        int d = b+c;
+        System.out.println(d);
+    }
+
+    static void polymorphism (int b){
+        int d = b*b;
+        System.out.println(d);
+    }
+
+    static void polymorphism (int b, int c, int e){
+        int d = b+c*e;
+        System.out.println(d);
+    }
 
 
-        }
+
+
     }
 
 
