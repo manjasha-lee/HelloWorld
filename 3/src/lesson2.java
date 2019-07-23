@@ -5,18 +5,19 @@ public class lesson2 {
 
     }
     public static void factorial(int b){
-        int[] num = new int[b+1];
+        int[] numb = new int[b+1];
         int i;
-        int f;
-    for (i=1;i>b;i++){
-        f = i*i++;
-        System.out.println(f);
-        for (int i1 : num) {
-            System.out.println(f);
+        for (i = 1; i < numb.length; i++) {
+        numb[i] = ++i;
         }
-    }
+        int f = numb[1]*numb[2];
+        int j;
+        for (j = 3; j <numb.length; j++) {
+           f=f*numb[j];
+        }
+        System.out.println(f);
+        }
 
-    }
 
 }
 
