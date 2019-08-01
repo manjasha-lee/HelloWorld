@@ -1,22 +1,15 @@
 public class lesson2 {
     public static void main(String[] args) {
-        factorial(2);
+        int[] num = new int[]{3,8,7,5,4,2,1,6,9};
+        
+       sorte(2);
 
 
     }
-    public static void factorial(int b){
-        int[] numb = new int[b+1];
-        int i;
-        for (i = 1; i < numb.length; i++) {
-        numb[i] = ++i;
-        }
-        int f = numb[1]*numb[2];
-        int j;
-        for (j = 3; j <numb.length; j++) {
-           f=f*numb[j];
-        }
-        System.out.println(f);
-        }
+    public static void sorte(int b){
+
+
+    }
 
 
 }
