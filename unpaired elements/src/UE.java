@@ -1,7 +1,8 @@
 public class UE {
     public static void main(String[] args) {
         int[]array = new int[]{1, 2, 3, 1, 3, 2, 3};
-        sort(array);
+
+        System.out.println(sort(array));
         System.out.println(unPaired(array));
     }
 
