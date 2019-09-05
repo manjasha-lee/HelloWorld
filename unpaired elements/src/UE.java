@@ -4,9 +4,8 @@ public class UE {
         System.out.println(unPaired(array));
     }
     static int unPaired (int[]arr) {
-        int i = 0;
         int x = 0;
-            for ( i = 0; i < (arr.length); i++) {
+            for ( int i = 0; i < (arr.length); i++) {
                 x = x^arr[i];
             }
         return x;
