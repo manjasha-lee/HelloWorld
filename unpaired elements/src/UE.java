@@ -5,9 +5,9 @@ public class UE {
     }
     static int unPaired (int[]arr) {
         int i = 0;
-        int x = arr[i] ^ arr[i + 1];
-            for ( i = 1; i < (arr.length-1); i++) {
-                x = x ^ arr[i + 1];
+        int x = 0;
+            for ( i = 0; i < (arr.length); i++) {
+                x = x^arr[i];
             }
         return x;
     }
