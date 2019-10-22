@@ -1,41 +1,30 @@
 
 public class BS {
     public static void main(String[] args) {
+        Cats cat1 = new Cats("Melissita", 3, "gren");
+        Cats cat2 = new Cats("Timoshok", 13,"yellow");
+        Cats cat3 = new Cats ("Nyasha", 2, "hazel");
 
-        int[] num = new int[]{2, 3, 5, 4, 1, 6, 9, 10, 8, 7};
+        System.out.println(cat1);
+        System.out.println(cat2);
+        System.out.println(cat3);
 
-        sort(num);
-        System.out.println(search(num, 11));
+        Dogs dog1 = new Dogs ("Feya", "Немецкая овчарка");
+        Dogs dog2 = new Dogs ("Feya", "Немецкая овчарка");
+
+        System.out.println(dog1);
+        System.out.println(dog2);
+        System.out.println(dog1==dog2);
+
+        dog1 = dog2;
+
+        System.out.println(dog1);
+        System.out.println(dog2);
+        System.out.println(dog1==dog2);
+
     }
 
-    static void sort(int[] num2) {
-        for (int i = 0; i < (num2.length - 1); i++) {
-            if (num2[i] < num2[i + 1]) {
-                System.out.println(num2[i]);
-            } else {
-                int var = num2[i];
-                num2[i] = num2[i + 1];
-                num2[i + 1] = var;
-                i = -1;
-            }
-        }
-    }
-
-   public static int search (int[] array, int b) {
-        int min = 0;
-        int max = array.length - 1;
-
-        while (min <= max) {
-            int point = min + (max - min) / 2;
-            if (b < array[point]) {
-                max = point - 1;
-            } else if (b > array[point]) {
-                min = point + 1;
-            } else {
-                return point;
-            }
-        }
-        return-1;
-    }
 }
+
+
 
