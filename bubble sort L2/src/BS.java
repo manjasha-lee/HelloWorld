@@ -22,6 +22,14 @@ public class BS {
         System.out.println(dog2);
         System.out.println(dog1==dog2);
 
+        LinkList one = new LinkList();
+        LinkList two = new LinkList();
+
+        one.setNum(1);
+        two.setNum(2);
+
+        System.out.println(one.getNum());
+        System.out.println(two.getNum());
     }
 
 }
