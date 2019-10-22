@@ -8,4 +8,9 @@ public class LinkList {
     public void setNum(int num) {
         this.num = num;
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }

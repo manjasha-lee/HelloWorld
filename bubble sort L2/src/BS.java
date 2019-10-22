@@ -1,7 +1,7 @@
 
 public class BS {
     public static void main(String[] args) {
-        Cats cat1 = new Cats("Melissita", 3, "gren");
+        Cats cat1 = new Cats("Melissita", 3, "green");
         Cats cat2 = new Cats("Timoshok", 13,"yellow");
         Cats cat3 = new Cats ("Nyasha", 2, "hazel");
 
@@ -28,10 +28,16 @@ public class BS {
         one.setNum(1);
         two.setNum(2);
 
-        System.out.println(one.getNum());
-        System.out.println(two.getNum());
     }
+    static void getByNum (int num){
+        LinkList link;
+        int coun = 0;
+        mark: while(coun>-1) {
+            if(link.getNum(num).equels(coun))
+            System.out.println();
+        }
 
+    }
 }
 
 
