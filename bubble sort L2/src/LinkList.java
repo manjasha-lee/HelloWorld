@@ -1,23 +1,37 @@
 public class LinkList {
-    private String name;
-    private int num;
-    int counter = 0;
 
-    public void add(String name){
-        LinkList x = new LinkList();
-        x.setNameAndNum(name, counter);
-        counter++;
-    }
-    public void setNameAndNum(String name, int num){
-        this.name = name;
-        this.num = num;
-    }
-    public String get(int num){
-        return name;
+public Node first;
+public Node last;
+
+    public Node getFirst() {
+        return first;
     }
 
-    @Override
-    public String toString() {
-        return name;
+    public void setFirst(Node first) {
+        this.first = first;
+    }
+    public void add (int value){
+        if (first == null){
+            Node node = new Node (value);
+            first = node;
+            last = node;
+        }else{
+            Node node = new Node (value);
+            last.setNext(node);
+            last = node;
+        }
+    }
+    public int get (int num){
+        Node value = first;
+        int result = 0;
+        for (int i = 0; i <= num; i++) {
+            if(i == num){
+                result = value.getValue();
+            }else {
+                value = value.getNext();
+            }
+        }
+        return result;
     }
 }
+

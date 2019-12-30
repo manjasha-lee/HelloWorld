@@ -23,11 +23,11 @@ public class BS {
         System.out.println(dog1 == dog2);
 
         LinkList collection = new LinkList();
-        collection.add("первый");
-        collection.add("второй");
-        System.out.println(collection.get(0));
-        System.out.println(collection.get(1));
+        collection.add(11);
+        collection.add(13);
+
     }
+
 }
 
 
