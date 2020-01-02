@@ -25,6 +25,9 @@ public class BS {
         LinkList collection = new LinkList();
         collection.add(11);
         collection.add(13);
+        collection.add(45);
+
+        System.out.println(collection.get(1));
 
     }
 

@@ -1,24 +1,30 @@
 public class LinkList {
 
-public Node first;
-public Node last;
+private Node first;
+private Node last;
 
     public Node getFirst() {
         return first;
     }
-
     public void setFirst(Node first) {
         this.first = first;
     }
+
+    public Node getLast() {
+        return last;
+    }
+    public void setLast(Node last) {
+        this.last = last;
+    }
+
     public void add (int value){
+        Node node = new Node (value);
         if (first == null){
-            Node node = new Node (value);
-            first = node;
-            last = node;
+            this.first = node;
+            this.last = node;
         }else{
-            Node node = new Node (value);
             last.setNext(node);
-            last = node;
+            this.last = node;
         }
     }
     public int get (int num){
